@@ -11,10 +11,10 @@
 public class Cliente {
     private String nombre;
     private String direccion;
-    private Personal contacto;
+    private Personal[] contacto;
     
 
-    public Cliente(String nombre, String direccion, Personal contacto) {
+    public Cliente(String nombre, String direccion, Personal[] contacto) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.contacto = contacto;
@@ -36,13 +36,21 @@ public class Cliente {
         this.direccion = direccion;
     }
 
-    public Personal getContacto() {
+    public Personal[] getContacto() {
         return contacto;
     }
 
-    public void setNombreContacto(Personal contacto) {
+    public void setContacto(Personal[] contacto) {
         this.contacto = contacto;
     }
+
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "nombre=" + nombre + '}';
+    }
+    
+    
     
     
 }

@@ -16,7 +16,7 @@ public class Personal {
     private String apellido;
     private double salario;
     private String nivelLaboral;
-    private Cliente cliente;
+    public Cliente cliente;
     
     private ArrayList<String> Notas;
 
@@ -59,10 +59,33 @@ public class Personal {
     public void setNivelLaboral(String nivelLaboral) {
         this.nivelLaboral = nivelLaboral;
     }
-    
-    public void setNota(String nota){
-        
+
+    public Cliente getCliente() {
+        return cliente;
     }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public ArrayList<String> getNotas() {
+        return Notas;
+    }
+
+    public void setNotas(ArrayList<String> Notas) {
+        this.Notas = Notas;
+    }
+
+    @Override
+    public String toString() {
+        return "Personal{" + "nombre=" + nombre + ", Notas=" + Notas + '}';
+    }
+
+   
+
+    
+    
+    
     
     
 }
