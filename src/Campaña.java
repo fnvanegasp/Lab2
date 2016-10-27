@@ -19,6 +19,8 @@ public class Campaña {
     private double presupuesto;
     private double costoReal;
     
+    private double presupuestoTotal = 15000000;
+    
     Director director;
     ArrayList<Personal> Equipo;
 
@@ -81,13 +83,21 @@ public class Campaña {
         this.costoReal = costoReal;
     }
     
-    public boolean presupuesto(double presupuesto){
-        if(this.presupuesto > presupuesto){
+    public boolean presupuesto(){
+        if(this.presupuesto > presupuestoTotal){
             return false;
         } else{
             return true;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Campa\u00f1a{" + "titulo=" + titulo + ", fechaInicio=" + fechaInicio + ", fechaFinalizacion=" + fechaFinalizacion + ", costoEstimado=" + costoEstimado + ", presupuesto=" + presupuesto + ", costoReal=" + costoReal + ", presupuestoTotal=" + presupuestoTotal + ", director=" + director + ", Equipo=" + Equipo + '}';
+    }
+
+    
+    
     
     
 }

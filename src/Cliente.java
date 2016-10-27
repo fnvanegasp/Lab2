@@ -12,6 +12,7 @@ public class Cliente {
     private String nombre;
     private String direccion;
     private Personal[] contacto;
+    private Campaña[] campañas;
     
 
     public Cliente(String nombre, String direccion, Personal[] contacto) {
@@ -44,11 +45,22 @@ public class Cliente {
         this.contacto = contacto;
     }
 
+    public Campaña[] getCampañas() {
+        return campañas;
+    }
+
+    public void setCampañas(Campaña[] campañas) {
+        this.campañas = campañas;
+    }
 
     @Override
     public String toString() {
-        return "Cliente{" + "nombre=" + nombre + '}';
+        return "Cliente{" + "nombre=" + nombre + ", direccion=" + direccion + ", contacto=" + contacto + ", campa\u00f1as=" + campañas + '}';
     }
+    
+    
+
+   
     
     
     
