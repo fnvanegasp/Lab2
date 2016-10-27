@@ -121,5 +121,12 @@ public class Anuncio {
     public void setFechaLanzamiento(String fechaLanzamiento) {
         this.fechaLanzamiento = fechaLanzamiento;
     }
+
+    @Override
+    public String toString() {
+        return "Anuncio{" + "tipoAnuncio=" + tipoAnuncio + ", costoEstimado=" + costoEstimado + ", costoReal=" + costoReal + ", textoEscrito=" + textoEscrito + ", graficos=" + graficos + ", fotografias=" + fotografias + ", animaciones=" + animaciones + ", videos=" + videos + ", actores=" + actores + ", audio=" + audio + ", fechaLanzamiento=" + fechaLanzamiento + '}';
+    }
+    
+    
     
 }
