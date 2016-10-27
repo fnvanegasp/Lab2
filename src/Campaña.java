@@ -18,12 +18,12 @@ public class Campaña {
     private double costoEstimado;
     private double presupuesto;
     private double costoReal;
-    
+   
     private double presupuestoTotal = 15000000;
     
     Director director;
     ArrayList<Personal> Equipo;
-
+    private Anuncio[] Anuncios = new Anuncio[10];
     
     public Campaña(String titulo, String fechaInicio, String fechaFinalizacion, double costoEstimado, double presupuesto, double costoReal) {
         this.titulo = titulo;
@@ -82,6 +82,34 @@ public class Campaña {
     public void setCostoReal(double costoReal) {
         this.costoReal = costoReal;
     }
+
+    public Director getDirector() {
+        return director;
+    }
+
+    public void setDirector(Director director) {
+        this.director = director;
+    }
+
+    public ArrayList<Personal> getEquipo() {
+        return Equipo;
+    }
+
+    public void setEquipo(ArrayList<Personal> Equipo) {
+        this.Equipo = Equipo;
+    }
+
+    public Anuncio[] getAnuncios() {
+        return Anuncios;
+    }
+
+    public void setAnuncios(Anuncio[] Anuncios) {
+        this.Anuncios = Anuncios;
+    }
+
+    
+    
+    
     
     public boolean presupuesto(){
         if(this.presupuesto > presupuestoTotal){
